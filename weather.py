@@ -8,4 +8,3 @@ title = soup.find('title')
 
 print (r)
 print (title)
-

@@ -1,17 +1,15 @@
 #coding:utf-8
 
 from selenium import webdriver
-import time
 
 dr = webdriver.Chrome()
-time.sleep(2)
-print ("最大化chrome,访问url")
-
-url = 'http://www.baidu.com'
+#最大化chrome,访问url
 dr.maximize_window()
+url = 'http://www.google.com'
 dr.get(url)
 
-time.sleep(2)
-print ("关闭chrome")
+dr.find_element_by_id("hplogo").click()
 
-#dr.close()
+print ("成功！")
+
+dr.close()
